@@ -1,0 +1,29 @@
+web server: giant library storing data ready to server a client(device connected to the internet) at anytime(24/7).
+internet consists of wires connecting clients to servers. note that there are under sea cables containing lots of fiber optic 
+cables to enable connection for country separated by water bodies.
+
+codes files used to create a website:
+     1.HTML(HyperText Markup Language) code file:
+	-responsible for the content in your website(Like if a website was considered to be a house,the html code file would be the bricks 
+	as in the raw materials that make up your house).
+	-It contains the text content,images,buttons or links on your website.
+	
+     2.CSS(Cascading Style Sheets) code file:
+	-responsible for styling your website(Like the painting of a house or shape of the door).
+	-This code file determines how your website will look as in, the colour the background page of your website will have 
+	or if the buttons will have round corners, the text on the buttons, font colour as well as font size.
+	It basically targets everything created by the html code file and applies styling to it.
+
+     3.JS(Java Script) code file:
+	-This code file give your website functionality(If you were building a house this would be like adding light bulbs 
+	to your house that can turn on and off basically things that make your house become a home).
+	-This code file turns a static website(having pretty images or text) into something a user can actually interact with.
+
+HTML
+HyperText:refers to pieces of text that can link to other documents in a website.
+Markup Language: "This is a quote" presence of these quotation tells the reader that the content inside it is a quote so these quotations
+act as markup.
+	*Markup is done through html tags.(Like heading tags,paragraph tags,etc.)
+
+ 
+

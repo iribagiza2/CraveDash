@@ -1,0 +1,203 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #d0f0e0;
+    margin-bottom: 50px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4f5dc;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #d3d3d3;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background-color: #8fbc8f;
+    color: white;
+}
+
+/* Hover underline effect */
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: wheat;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Content section */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    /* optional spacing from top */
+}
+
+.content h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #d0f0e0;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* CTA Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: darkseagreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 1px solid darkseagreen;
+    color: darkseagreen;
+}
+
+/* Additional Features */
+.other {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.other img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+/* Social links */
+.social-links {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #aaa;
+    padding-right: 20px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #8fbc8f;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .feature-img {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .social-links {
+        transform: none;
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
